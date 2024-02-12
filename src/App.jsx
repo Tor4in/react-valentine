@@ -23,7 +23,7 @@ function App() {
       <div className="wraper">
 				{show ? <div className='metoo'><h1>Я теж буду твоїм валентином❤️‍🔥</h1></div> : false}
         <button onMouseEnter={Onshow}>Так</button>
-        <button style={style} onMouseEnter={newPos}>Ні</button>
+       {!show ?  <button style={style} onMouseEnter={newPos}>Ні</button> : false}
       </div>
     </>
   );
